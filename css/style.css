@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mybtn{
+  
+    width: auto;
+    padding-inline: 1rem;
+    padding-block: 0.2rem;
+    border: 1px solid #278575;
+    background-color:#278575;
+   
+    border-radius: 5px;
+    
+}
+.bullot::marker{
+    color: #278575;
+    font-size: 20px;
+}
+.bullot{
+    letter-spacing: 1px;
+    
+}
+ .liveHealth{
+    font-size: 1rem;
+    line-height: 1em;
+  
+    color: #051145;
+ }
+
+ .featuredtext{
+    color: #278575;
+    font-size: 1rem;
+ }
+ 
+  .stars {
+    font-size: 16px;
+    color: gold;
+    padding-left: 5px;
+}
+
+.text-color{
+    color: #051145;
+    
+}
+ 
+
+@media (min-width: 767px) and (max-width: 1023px) {
+    .liveHealth{
+        font-size: 30px;
+        
+     }
+    
+}
+
+@media (min-width:1024px){
+    .liveHealth{
+        font-size: 5rem;
+        
+     }
+   
+
+}
