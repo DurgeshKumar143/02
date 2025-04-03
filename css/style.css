@@ -3,62 +3,103 @@
     padding: 0;
     box-sizing: border-box;
 }
+.hero {
+    background-image: url('../img/hero.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover; /* Added this for better responsive coverage */
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 1; /* Added base z-index */
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Fixed rgba syntax */
+    z-index: -1; /* Ensures overlay stays behind content */
+}
+
+.hero2{
+    background-image: url('../img/bg-03.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+
+}
+.hero2::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0,0,0.4);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+
+
+}
+
+
+.mytext{
+    font-size: 4rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.mytext1{
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+}
 .mybtn{
-  
-    width: auto;
-    padding-inline: 1rem;
-    padding-block: 0.2rem;
-    border: 1px solid #278575;
-    background-color:#278575;
-   
-    border-radius: 5px;
-    
-}
-.bullot::marker{
-    color: #278575;
-    font-size: 20px;
-}
-.bullot{
-    letter-spacing: 1px;
-    
-}
- .liveHealth{
-    font-size: 1rem;
-    line-height: 1em;
-  
-    color: #051145;
- }
+    border: 1px solid white;
+    color: black;
 
- .featuredtext{
-    color: #278575;
-    font-size: 1rem;
- }
- 
-  .stars {
-    font-size: 16px;
-    color: gold;
-    padding-left: 5px;
 }
 
-.text-color{
-    color: #051145;
-    
+.star-rating {
+    color: #ffd700; /* Gold color for stars */
+    font-size: 14px;
 }
- 
+
+.card{
+    border: none;
+    background-color: transparent;
+    border-radius: 10px;
+}
+.sale-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color:  white;
+    color: black;
+    padding: 5px 15px;
+    font-size: 12px;
+    border-radius: 3px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    z-index: 2;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    border-radius: 10px;
+  }
+  
 
 @media (min-width: 767px) and (max-width: 1023px) {
-    .liveHealth{
-        font-size: 30px;
-        
-     }
     
 }
 
 @media (min-width:1024px){
-    .liveHealth{
-        font-size: 5rem;
-        
-     }
+    
    
 
 }
